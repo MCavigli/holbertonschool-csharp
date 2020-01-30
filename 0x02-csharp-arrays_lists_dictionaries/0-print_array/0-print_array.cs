@@ -11,6 +11,11 @@ class Array
         }
         int i;
         int[] newArray = new int[size];
+        if (size == 0)
+        {
+            Console.WriteLine();
+            return newArray;
+        }
         for (i = 0; i < newArray.Length; i++)
         {
             newArray[i] = i;
