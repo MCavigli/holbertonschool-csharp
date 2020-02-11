@@ -12,7 +12,7 @@ class MyQueue
         else
             Console.WriteLine("First item: {0}", aQueue.Peek());
         aQueue.Enqueue(newItem);
-        Console.WriteLine("Queue contains: \"{0}\": {1}", search, present);
+        Console.WriteLine("Queue contains \"{0}\": {1}", search, present);
         if (present == true)
         {
             while (aQueue.Dequeue() != search)
