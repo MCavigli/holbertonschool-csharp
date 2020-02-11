@@ -5,25 +5,20 @@ class LList
 {
     public static LinkedListNode<int> Insert(LinkedList<int> myLList, int n)
     {
-        if (myLList == null)
-            return (null);
         LinkedListNode<int> current = myLList.First;
-        if (current.Next == null)
+        LinkedListNode<int> newNode = new LinkedListNode<int>(n);
+        if (current == null || n < current.Value)
         {
-            if (current.Value > n)
-            {
-                myLList.AddFirst(n);
-                return (myLList.First);
-            }
-            else
-            {
-                myLList.AddLast(n);
-                return (myLList.Last);
-            }
+            myLList.AddFirst(newNode);
+            return (newNode);
+        }
+        if (current.Next == null && current.Value < n)
+        {
+            myLList.AddLast(newNode);
+            return (newNode);
         }
         while (current != null)
         {
-
             if (n > current.Value && current.Next == null)
             {
                 myLList.AddLast(n);
@@ -31,11 +26,11 @@ class LList
             }
             if (n < current.Next.Value && n > current.Value)
             {
-                myLList.AddAfter(current, n);
-                return (current);
+                myLList.AddAfter(current, newNode);
+                return (newNode);
             }
             current = current.Next;
         }
-        return (current);
+        return (newNode);
     }
 }
