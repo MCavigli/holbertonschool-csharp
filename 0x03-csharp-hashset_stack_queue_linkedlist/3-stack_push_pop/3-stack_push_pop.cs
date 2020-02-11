@@ -10,15 +10,11 @@ class MyStack
         if (aStack.Count == 0)
             Console.WriteLine("Stack is empty");
         else
-            Console.WriteLine("Top Item: {0}", aStack.Peek());
+            Console.WriteLine("Top item: {0}", aStack.Peek());
         Console.WriteLine("Stack contains \"{0}\": {1}", search, present);
         if (present == true)
-        {
             while (aStack.Pop() != search)
-            {
-                continue;
-            }
-        }
+            { }
         aStack.Push(newItem);
         return (aStack);
     }
