@@ -17,20 +17,13 @@ class LList
             myLList.AddLast(newNode);
             return (newNode);
         }
-        while (current != null)
+        while (current.Next != null)
         {
-            if (n > current.Value && current.Next == null)
-            {
-                myLList.AddLast(n);
-                return (current);
-            }
-            if (n < current.Next.Value && n > current.Value)
-            {
-                myLList.AddAfter(current, newNode);
-                return (newNode);
-            }
+            if (current.Next.Value >= n)
+                break;
             current = current.Next;
         }
+        myLList.AddAfter(current, newNode);
         return (newNode);
     }
 }
