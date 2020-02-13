@@ -7,8 +7,6 @@ namespace Enemies
 		public int health;
 
 		public Zombie()
-		{
-			health = 0;
-		}
+		{ }
 	}
 }
