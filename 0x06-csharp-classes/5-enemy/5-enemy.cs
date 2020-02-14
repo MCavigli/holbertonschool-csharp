@@ -34,7 +34,7 @@ namespace Enemies
 		/// <returns>The zombie isntance's health.</returns>
 		public int GetHealth()
 		{
-			return (this.health);
+			return (health);
 		}
 
 		/// <summary>
@@ -43,7 +43,7 @@ namespace Enemies
 		/// <returns></returns>
 		public override string ToString()
 		{
-			return string.Format("Zombie name: {0} / Total Health: {1}", name, health);
+			return String.Format("Zombie name: {0} / Total Health: {1}", name, health);
 		}
 
 		/// <summary>
