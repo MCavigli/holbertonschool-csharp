@@ -50,7 +50,9 @@ namespace Enemies
 		/// Basic constructor for zombie class.
 		/// </summary>
 		public Zombie()
-		{ }
+		{
+			health = 0;
+		}
 
 		/// <summary>
 		/// Constructor for zombie class with health field.
