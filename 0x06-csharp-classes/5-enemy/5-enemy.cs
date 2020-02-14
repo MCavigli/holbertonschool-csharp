@@ -24,8 +24,7 @@ namespace Enemies
 		public string Name
 		{
 			get { return (name); }
-			set
-			{ name = value; }
+			set { name = value; }
 		}
 
 		/// <summary>
@@ -50,9 +49,7 @@ namespace Enemies
 		/// Basic constructor for zombie class.
 		/// </summary>
 		public Zombie()
-		{
-			health = 0;
-		}
+		{ }
 
 		/// <summary>
 		/// Constructor for zombie class with health field.
@@ -64,7 +61,8 @@ namespace Enemies
 			{
 				throw new ArgumentException("Health must be greater than or equal to 0");
 			}
-			health = value;
+			else
+				health = value;
 		}
 	}
 }
