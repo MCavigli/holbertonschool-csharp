@@ -3,6 +3,7 @@ using Text;
 
 namespace Text.Tests
 {
+	[TestFixture]
 	public class Str_Tests
 	{
 		private string s;

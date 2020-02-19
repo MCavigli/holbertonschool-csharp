@@ -12,7 +12,7 @@ namespace Text
 		/// Checks if string is a palindrome.
 		/// </summary>
 		/// <param name="s">String to check.</param>
-		/// <returns></returns>
+		/// <returns>Returns true if palindrome, false is not.</returns>
 		public static bool IsPalindrome(string s)
 		{
 			if (string.IsNullOrEmpty(s))

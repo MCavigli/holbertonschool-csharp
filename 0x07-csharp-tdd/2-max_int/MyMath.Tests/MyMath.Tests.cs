@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace MyMath.Tests
 {
+	[TestFixture]
 	public class Operations_Tests
 	{
 		private List<int> myList1;
@@ -20,6 +21,7 @@ namespace MyMath.Tests
 			int result = Operations.Max(myList1);
 			Assert.AreEqual(1024, result);
 		}
+
 		[Test]
 		public void Max_Nums_IsZero()
 		{

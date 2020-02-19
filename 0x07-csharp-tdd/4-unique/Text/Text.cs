@@ -12,7 +12,7 @@ namespace Text
 		/// Returns index of first non-repeating character of a string.
 		/// </summary>
 		/// <param name="s">String to check.</param>
-		/// <returns></returns>
+		/// <returns>Index of first non-repeating character.</returns>
 		public static int UniqueChar(string s)
 		{
 			int i = 0;

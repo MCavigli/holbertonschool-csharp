@@ -12,7 +12,7 @@ namespace MyMath
 		/// </summary>
 		/// <param name="a">The first integer.</param>
 		/// <param name="b">The second integer.</param>
-		/// <returns></returns>
+		/// <returns>Sum of integers.</returns>
 		public static int Add(int a, int b)
 		{
 			return (a + b);

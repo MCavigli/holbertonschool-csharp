@@ -12,7 +12,7 @@ namespace MyMath
 		/// </summary>
 		/// <param name="matrix">The matrix to be divided.</param>
 		/// <param name="num">The number to divide all matrix elements by.</param>
-		/// <returns></returns>
+		/// <returns>The new divided matrix.</returns>
 		public static int[,] Divide(int[,] matrix, int num)
 		{
 			int[,] newMatrix = matrix.Clone() as int[,];
