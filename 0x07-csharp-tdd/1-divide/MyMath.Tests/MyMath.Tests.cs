@@ -55,20 +55,7 @@ namespace MyMath.Tests
 				Assert.IsNull(dividedMatrix);
 			}
 		}
-		// [Test]
-		// public void Divide_Number_IsDifferentType()
-		// {
-		// 	double num = 3.3;
-		// 	int[,] dividedMatrix;
-		// 	try
-		// 	{
-		// 		dividedMatrix = Matrix.Divide(array2D, num);
-		// 	}
-		// 	catch (ArgumentException)
-		// 	{
-		// 		Assert.Fail();
-		// 	}
-		// }
+		
 		[Test]
 		public void Divide_Matrix_IsMatrix()
 		{
@@ -79,6 +66,22 @@ namespace MyMath.Tests
 		{
 			int[] falseArray = { 1, 2, 3, 4 };
 			Assert.AreNotEqual(falseArray.GetType(), typeof(int));
+		}
+
+		[Test]
+		public void Divide_Matrix_MatrixIsNull()
+		{
+			int num = 2;
+			int[,] nullMatrix = null;
+			int[,] returnMatrix = null;
+			try
+			{
+				returnMatrix = Matrix.Divide(nullMatrix, num);
+			}
+			catch (NullReferenceException)
+			{
+				Assert.IsNull(returnMatrix);
+			}
 		}
 
 	}
