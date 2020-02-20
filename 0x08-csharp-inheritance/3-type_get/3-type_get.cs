@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
-using System.Globalization;
-using System.Text;
-using System.IO;
-using System.Linq;
 
 /// <summary>
 /// Class that holds methods to work on an object.
@@ -20,11 +16,11 @@ class Obj
 		TypeInfo t = myObj.GetType().GetTypeInfo();
 		IEnumerable<PropertyInfo> pList = t.DeclaredProperties;
 		IEnumerable<MethodInfo> mList = t.DeclaredMethods;
-		Console.WriteLine(myObj.GetType() + " Properties:");
+		Console.WriteLine(t.Name + " Properties:");
 		foreach (PropertyInfo p in pList)
-			Console.WriteLine(p);
-		Console.WriteLine(myObj.GetType() + " Methods:");
+			Console.WriteLine(p.Name);
+		Console.WriteLine(t.Name + " Methods:");
 		foreach (MethodInfo m in mList)
-			Console.WriteLine(m);
+			Console.WriteLine(m.Name);
 	}
 }
