@@ -19,6 +19,18 @@ namespace Text.Tests
 		[Test]
 		public void Str_s_UnsuccessfulExample()
 		{
+			string strWrong = "notapalindrome";
+			Assert.IsFalse(Str.IsPalindrome(strWrong));
+		}
+		[Test]
+		public void Str_SuccessfulExample_WithSpaces()
+		{
+			string strRight = "race car";
+			Assert.IsTrue(Str.IsPalindrome(strRight));
+		}
+		[Test]
+		public void Str_s_UnsuccessfulExample_WithSpaces()
+		{
 			string strWrong = "not a palindrome";
 			Assert.IsFalse(Str.IsPalindrome(strWrong));
 		}
