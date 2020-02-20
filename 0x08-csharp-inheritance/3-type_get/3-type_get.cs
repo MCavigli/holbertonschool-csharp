@@ -14,13 +14,11 @@ class Obj
 	public static void Print(object myObj)
 	{
 		TypeInfo t = myObj.GetType().GetTypeInfo();
-		IEnumerable<PropertyInfo> pList = t.DeclaredProperties;
-		IEnumerable<MethodInfo> mList = t.DeclaredMethods;
 		Console.WriteLine(t.Name + " Properties:");
-		foreach (PropertyInfo p in pList)
+		foreach (PropertyInfo p in t.GetProperties())
 			Console.WriteLine(p.Name);
 		Console.WriteLine(t.Name + " Methods:");
-		foreach (MethodInfo m in mList)
+		foreach (MethodInfo m in t.GetMethods())
 			Console.WriteLine(m.Name);
 	}
 }
