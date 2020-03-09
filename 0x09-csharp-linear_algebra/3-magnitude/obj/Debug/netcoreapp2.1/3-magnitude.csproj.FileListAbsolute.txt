@@ -1,0 +1,12 @@
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/3-magnitude/obj/Debug/netcoreapp2.1/3-magnitude.csprojAssemblyReference.cache
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/3-magnitude/obj/Debug/netcoreapp2.1/3-magnitude.csproj.CoreCompileInputs.cache
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/3-magnitude/obj/Debug/netcoreapp2.1/3-magnitude.AssemblyInfoInputs.cache
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/3-magnitude/obj/Debug/netcoreapp2.1/3-magnitude.AssemblyInfo.cs
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/3-magnitude/bin/Debug/netcoreapp2.1/3-magnitude.xml
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/3-magnitude/bin/Debug/netcoreapp2.1/3-magnitude.deps.json
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/3-magnitude/bin/Debug/netcoreapp2.1/3-magnitude.runtimeconfig.json
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/3-magnitude/bin/Debug/netcoreapp2.1/3-magnitude.runtimeconfig.dev.json
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/3-magnitude/bin/Debug/netcoreapp2.1/3-magnitude.dll
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/3-magnitude/bin/Debug/netcoreapp2.1/3-magnitude.pdb
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/3-magnitude/obj/Debug/netcoreapp2.1/3-magnitude.dll
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/3-magnitude/obj/Debug/netcoreapp2.1/3-magnitude.pdb
