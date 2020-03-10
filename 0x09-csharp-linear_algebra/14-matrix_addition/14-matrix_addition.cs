@@ -13,15 +13,16 @@ class MatrixMath
 		double[,] failMatrix = { { -1 } };
 		if (matrix1.Length != matrix2.Length)
 			return (failMatrix);
-		if (matrix1.Length != 4 && matrix2.Length != 4 && matrix1.Length != 9 && matrix2.Length != 9)
+		if (matrix1.GetLength(0) != 2 || matrix2.GetLength(0) != 3)
 			return (failMatrix);
 
 		int i, j;
+		double[,] newMatrix;
 
 		if (matrix1.Length == 4)
-			double[,] newMatrix = { { 0, 0 }, { 0, 0 } };
+			newMatrix = new double[2, 2];
 		else
-			double[,] newMatrix = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
+			newMatrix = new double[3, 3];
 
 		for (i = 0; i < matrix1.GetLength(i); i++)
 		{
