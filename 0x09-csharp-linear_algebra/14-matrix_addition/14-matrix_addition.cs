@@ -15,7 +15,7 @@ class MatrixMath
 		if (matrix1.Length == 4)
 			double[,] newMatrix = { { 0, 0 }, { 0, 0 } };
 		else
-			double[,] newMatrix = { { 0, 0, 0 }, { 0, 0, 0 };]
+			double[,] newMatrix = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
 
 		for (i = 0; i < matrix1.GetLength(i); i++)
 		{
