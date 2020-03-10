@@ -11,7 +11,7 @@ class VectorMath
 			return (failVector);
 
 		for (i = 0; i < vector.Length; i++)
-			vector[i] = Math.Round(vector[i] * vector[i], 2);
+			vector[i] = Math.Round(vector[i] * scalar, 2);
 		return (vector);
 	}
 }
