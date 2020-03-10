@@ -15,10 +15,10 @@ class VectorMath
 			return (-1);
 
 		for (i = 0; i < vector.Length; i++)
+		{
 			vector[i] = Math.Round(vector[i] * vector[i], 2);
-
-		foreach (double dub in vector)
-			result += result + dub;
+			result += vector[i];
+		}
 		return (result);
 	}
 }
