@@ -2,6 +2,12 @@
 
 class MatrixMath
 {
+	/// <summary>
+	/// Adds two matrices together.
+	/// </summary>
+	/// <param name="matrix1">The first matrix.</param>
+	/// <param name="matrix2">The second matrix.</param>
+	/// <returns>A new matrix or -1 on fail.</returns>
 	public static double[,] Add(double[,] matrix1, double[,] matrix2)
 	{
 		double[,] failMatrix = { { -1 } };
