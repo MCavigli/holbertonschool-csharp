@@ -1,0 +1,4 @@
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/6-vector_addition/obj/Debug/netcoreapp2.1/6-vector_addition.csprojAssemblyReference.cache
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/6-vector_addition/obj/Debug/netcoreapp2.1/6-vector_addition.csproj.CoreCompileInputs.cache
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/6-vector_addition/obj/Debug/netcoreapp2.1/6-vector_addition.AssemblyInfoInputs.cache
+/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/6-vector_addition/obj/Debug/netcoreapp2.1/6-vector_addition.AssemblyInfo.cs

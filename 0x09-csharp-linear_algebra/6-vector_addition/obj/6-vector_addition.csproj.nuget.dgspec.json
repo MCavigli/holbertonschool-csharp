@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/6-vector_addition/6-vector_addition.csproj": {}
+  },
+  "projects": {
+    "/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/6-vector_addition/6-vector_addition.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/6-vector_addition/6-vector_addition.csproj",
+        "projectName": "6-vector_addition",
+        "projectPath": "/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/6-vector_addition/6-vector_addition.csproj",
+        "packagesPath": "/Users/mcavigli/.nuget/packages/",
+        "outputPath": "/Users/mcavigli/Documents/Repos/Holberton/holbertonschool-csharp/0x09-csharp-linear_algebra/6-vector_addition/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/mcavigli/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
