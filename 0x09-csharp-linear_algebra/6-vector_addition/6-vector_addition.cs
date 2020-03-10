@@ -11,13 +11,14 @@ class VectorMath
 	public static double[] Add(double[] vector1, double[] vector2)
 	{
 		int i;
+		double[] failVector = new double[] { -1 };
 
 		if (vector1.Length != vector2.Length)
-			return (-1);
+			return (failVector);
 		if (vector1.Length < 2 || vector1.Length > 3 || vector2.Length < 2 || vector2.Length > 3)
-			return (-1);
+			return (failVector);
 
-		double vector3 = new double(vector1.Length);
+		double[] vector3 = new double[vector1.Length];
 
 		for (i = 0; i < vector1.Length; i++)
 			vector3[i] = vector1[i] + vector2[i];
