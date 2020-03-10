@@ -7,7 +7,7 @@ class MatrixMath
 		double[,] failMatrix = { { -1 } };
 		if (matrix1.Length != matrix2.Length)
 			return (failMatrix);
-		if (matrix1.Length != 4 || matrix2.Length != 4 || matrix1.Length != 9 || matrix2.Length != 9)
+		if (matrix1.Length != 4 && matrix2.Length != 4 && matrix1.Length != 9 && matrix2.Length != 9)
 			return (failMatrix);
 
 		int i, j;
