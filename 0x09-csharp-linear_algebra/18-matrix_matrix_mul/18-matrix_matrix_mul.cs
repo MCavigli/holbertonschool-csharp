@@ -2,23 +2,6 @@
 
 class MatrixMath
 {
-	// public void Main()
-	// {
-	// 	double[,] m1 = { { 2, 3 }, { -1, 0 } };
-	// 	double[,] m2 = { { 1, 7 }, { -8, -2 } };
-	// 	int h = Multiply(m1, m2).GetLength(0);
-	// 	int w = Multiply(m1, m2).GetLength(1);
-	// 	double[,] nm = Multiply(m1, m2);
-	// 	int i, j;
-	// 	for (i = 0; i < h; i++)
-	// 	{
-	// 		for (j = 0; j < w; j++)
-	// 		{
-	// 			Console.Write("{0} ", nm[i, j]);
-	// 		}
-	// 		Console.WriteLine();
-	// 	}
-	// }
 	/// <summary>
 	/// Multiplies two matrices together.
 	/// </summary>
@@ -44,15 +27,13 @@ class MatrixMath
 
 		for (i = 0; i < h1; i++)
 		{
-			// result = 0;
-			for (k = 0; k < w1; k++)
+			for (j = 0; j < h1; j++)
 			{
-				for (j = 0; j < w2; j++)
+				for (k = 0; k < w2; k++)
 				{
-					prod += matrix1[i, k] * matrix2[k, j];
+					prod += matrix1[i, j] * matrix2[j, k];
 				}
-				newMatrix[i, k] = prod;
-				// result += prod;
+				newMatrix[i, j] = prod;
 			}
 		}
 		return (newMatrix);
