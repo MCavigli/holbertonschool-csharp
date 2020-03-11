@@ -55,5 +55,6 @@ class MatrixMath
 				// result += prod;
 			}
 		}
+		return (newMatrix);
 	}
 }
