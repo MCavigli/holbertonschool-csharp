@@ -1,5 +1,8 @@
 ﻿using System;
 
+/// <summary>
+/// Linear algebra with matrices.
+/// </summary>
 class MatrixMath
 {
 	/// <summary>
@@ -29,9 +32,10 @@ class MatrixMath
 		{
 			for (j = 0; j < h1; j++)
 			{
+				prod = 0;
 				for (k = 0; k < w2; k++)
 				{
-					prod += matrix1[i, j] * matrix2[j, k];
+					prod += matrix1[i, k] * matrix2[k, j];
 				}
 				newMatrix[i, j] = prod;
 			}
