@@ -20,20 +20,19 @@ class MatrixMath
 		double[,] failMatrix = { { -1 } };
 		double[,] newMatrix;
 		int i, j, k;
-		// int result = 0;
-		int prod = 0;
+		double prod = 0;
 
 		if (w1 == h2)
 			newMatrix = new double[h1, w2];
 		else
 			return (failMatrix);
 
-		for (i = 0; i < h1; i++)
+		for (i = 0; i < newMatrix.GetLength(0); i++)
 		{
-			for (j = 0; j < h1; j++)
+			for (j = 0; j < newMatrix.GetLength(1); j++)
 			{
 				prod = 0;
-				for (k = 0; k < w2; k++)
+				for (k = 0; k < w1; k++)
 				{
 					prod += matrix1[i, k] * matrix2[k, j];
 				}
@@ -42,4 +41,19 @@ class MatrixMath
 		}
 		return (newMatrix);
 	}
+	// static void Main()
+	// {
+	// 	double[,] m1 = { { 2, 3 }, { -1, 2 } };
+	// 	double[,] m2 = { { 1, 7 }, { -8, -2 } };
+	// 	double[,] nm = Multiply(m1, m2);
+	// 	int i, j;
+	// 	for (i = 0; i < nm.GetLength(0); i++)
+	// 	{
+	// 		for (j = 0; j < nm.GetLength(1); j++)
+	// 		{
+	// 			Console.Write("{0} ", nm[i, j]);
+	// 		}
+	// 		Console.WriteLine();
+	// 	}
+	// }
 }
