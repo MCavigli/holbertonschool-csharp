@@ -11,18 +11,16 @@ class MatrixMath
 	public static double[,] Add(double[,] matrix1, double[,] matrix2)
 	{
 		double[,] failMatrix = { { -1 } };
-		if (matrix1.Length != matrix2.Length)
-			return (failMatrix);
-		if (matrix1.GetLength(0) != 2 || matrix2.GetLength(0) != 3)
-			return (failMatrix);
 
 		int i, j;
 		double[,] newMatrix;
 
-		if (matrix1.Length == 4)
+		if (matrix1.GetLength(0) == 2 || matrix2.GetLength(1) == 2)
 			newMatrix = new double[2, 2];
-		else
+		else if (matrix1.GetLength(0) == 3 || matrix2.GetLength(1) == 3)
 			newMatrix = new double[3, 3];
+		else
+			return (failMatrix);
 
 		for (i = 0; i < matrix1.GetLength(i); i++)
 		{
