@@ -9,8 +9,8 @@ class MatrixMath
 	/// <returns>A new 2D matrix that is the inverse of matrix.</returns>
 	public static double[,] Inverse2D(double[,] matrix)
 	{
-		double[,] failMatrix = { { -1 } };
-		double[,] newMatrix = new double[2];
+		double[,] failMatrix = new double[,] { { -1 } };
+		double[,] newMatrix = new double[2, 2];
 		double d = 0;
 
 		if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
