@@ -16,9 +16,9 @@ class VectorMath
 
 		for (i = 0; i < vector.Length; i++)
 		{
-			vector[i] = Math.Round(vector[i] * vector[i], 2);
+			vector[i] = vector[i] * vector[i];
 			result += vector[i];
 		}
-		return (result);
+		return Math.Round(Math.Sqrt(result), 2);
 	}
 }
