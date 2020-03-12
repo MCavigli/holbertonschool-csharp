@@ -20,8 +20,8 @@ class MatrixMath
 			return (failMatrix);
 
 		double[,] newMatrix = new double[,] {
-			{(1 / d) * matrix[1, 1], (1 / d) * (matrix[0, 1] * -1)},
-			{(1 / d) * (matrix[1, 0] * -1), (1 / d) * matrix[0, 0]}
+			{(1 / d) * matrix[1, 1], (1 / d) * -matrix[0, 1]},
+			{(1 / d) * -matrix[1, 0], (1 / d) * matrix[0, 0]}
 		};
 		return (newMatrix);
 	}
