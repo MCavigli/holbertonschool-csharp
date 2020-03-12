@@ -28,7 +28,7 @@ class MatrixMath
 				prod = 0;
 				for (k = 0; k < 2; k++)
 				{
-					prod += Math.Round(matrix[i, k] * rotateMatrix[k, j]);
+					prod += Math.Round(matrix[i, k] * rotateMatrix[k, j], 2);
 				}
 				newMatrix[i, j] = prod;
 			}
