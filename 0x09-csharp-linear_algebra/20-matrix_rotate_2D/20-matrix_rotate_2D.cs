@@ -12,7 +12,7 @@ class MatrixMath
 	{
 		double[,] failMatrix = { { -1 } };
 		double[,] newMatrix;
-		double[,] rotateMatrix = { { Math.Cos(angle), Math.Sin(angle) }, { Math.Cos(angle) * -1, Math.Sin(angle) } };
+		double[,] rotateMatrix = { { Math.Cos(angle), Math.Sin(angle) }, { Math.Sin(angle) * -1, Math.Cos(angle) } };
 		int i, j, k;
 		double prod = 0;
 
