@@ -13,7 +13,8 @@ class MatrixMath
 
 		if (matrix.GetLength(0) == 2 && matrix.GetLength(1) == 2)
 		{
-			d = (matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]);
+			d = Math.Round(
+				(matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]), 2);
 		}
 		else if (matrix.GetLength(0) == 3 && matrix.GetLength(1) == 3)
 		{
