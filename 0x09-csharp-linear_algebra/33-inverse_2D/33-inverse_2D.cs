@@ -21,9 +21,9 @@ class MatrixMath
 			return (failMatrix);
 
 		newMatrix[0, 0] = (1 / d) * (matrix[1, 1]);
-		newMatrix[0, 1] = (1 / d) * (matrix[0, 0]);
+		newMatrix[0, 1] = (1 / d) * (matrix[0, 1]) * -1;
 		newMatrix[1, 0] = (1 / d) * (matrix[1, 0]);
-		newMatrix[1, 1] = (1 / d) * (matrix[0, 1]);
+		newMatrix[1, 1] = (1 / d) * (matrix[0, 0]) * -1;
 		return (newMatrix);
 	}
 }
