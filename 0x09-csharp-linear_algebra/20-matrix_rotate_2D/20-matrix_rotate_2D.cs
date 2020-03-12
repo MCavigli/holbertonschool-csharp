@@ -21,14 +21,14 @@ class MatrixMath
 		else
 			return (failMatrix);
 
-		for (i = 0; i < newMatrix.GetLength(0); i++)
+		for (i = 0; i < 2; i++)
 		{
-			for (j = 0; j < newMatrix.GetLength(1); j++)
+			for (j = 0; j < 2; j++)
 			{
 				prod = 0;
-				for (k = 0; k < w1; k++)
+				for (k = 0; k < 2; k++)
 				{
-					prod += matrix[i, k] * rotateMatrix[k, j];
+					prod += Math.Round(matrix[i, k] * rotateMatrix[k, j]);
 				}
 				newMatrix[i, j] = prod;
 			}
