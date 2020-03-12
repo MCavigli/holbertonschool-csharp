@@ -20,9 +20,22 @@ class MatrixMath
 			return (failMatrix);
 
 		double[,] newMatrix = new double[,] {
-			{(1 / d) * matrix[1, 1], (1 / d) * -matrix[0, 1]},
-			{(1 / d) * -matrix[1, 0], (1 / d) * matrix[0, 0]}
+			{Math.Round((1 / d) * matrix[1, 1], 2), Math.Round((1 / d) * -matrix[0, 1], 2)},
+			{Math.Round((1 / d) * -matrix[1, 0], 2), Math.Round((1 / d) * matrix[0, 0], 2)}
 		};
 		return (newMatrix);
 	}
+	// public static void Main()
+	// {
+	// 	double[,] m = new double[,] { { 1, 2 }, { 3, 4 } };
+	// 	double[,] nm = Inverse2D(m);
+	// 	for (int i = 0; i < nm.GetLength(0); i++)
+	// 	{
+	// 		for (int j = 0; j < nm.GetLength(1); j++)
+	// 		{
+	// 			Console.Write("{0} ", nm[i, j]);
+	// 		}
+	// 		Console.WriteLine();
+	// 	}
+	// }
 }
