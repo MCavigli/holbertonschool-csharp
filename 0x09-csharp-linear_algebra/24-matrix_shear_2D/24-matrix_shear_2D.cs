@@ -19,8 +19,6 @@ class MatrixMath
 
 		if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
 			return (failMatrix);
-		if (direction != "x" || direction != "y")
-			return (failMatrix);
 
 		if (direction == 'x')
 			shear = new double[,] { { 1, 0 }, { factor, 1 } };
@@ -36,9 +34,9 @@ class MatrixMath
 				prod = 0;
 				for (k = 0; k < 2; k++)
 				{
-					prod += Math.Round(matrix[i, k] * shear[k, j], 2);
+					prod += matrix[i, k] * shear[k, j];
 				}
-				newMatrix[i, j] = prod;
+				newMatrix[i, j] = Math.Round(prod, 2);
 			}
 		}
 		return (newMatrix);
