@@ -23,9 +23,11 @@ class MatrixMath
 			return (failMatrix);
 
 		if (direction == 'x')
+			shear = new double[,] { { 1, 0 }, { factor, 1 } };
+		else if (direction == 'y')
 			shear = new double[,] { { 1, factor }, { 0, 1 } };
 		else
-			shear = new double[,] { { 1, 0 }, { factor, 1 } };
+			return (failMatrix);
 
 		for (i = 0; i < 2; i++)
 		{
