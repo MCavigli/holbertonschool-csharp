@@ -10,7 +10,7 @@ class MatrixMath
 	public static double[,] Transpose(double[,] matrix)
 	{
 		double[,] failMatrix = { { -1 } };
-		double[,] newMatrix;
+		double[,] newMatrix = new double[matrix.GetLength(1), matrix.GetLength(0)];
 
 		if (matrix.Length == 0)
 			return failMatrix;
