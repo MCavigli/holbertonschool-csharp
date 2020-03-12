@@ -15,9 +15,9 @@ class MatrixMath
 		int i, j;
 		double[,] newMatrix;
 
-		if (matrix1.GetLength(0) == 2 || matrix2.GetLength(1) == 2)
+		if (matrix1.GetLength(0) == 2 && matrix2.GetLength(1) == 2)
 			newMatrix = new double[2, 2];
-		else if (matrix1.GetLength(0) == 3 || matrix2.GetLength(1) == 3)
+		else if (matrix1.GetLength(0) == 3 && matrix2.GetLength(1) == 3)
 			newMatrix = new double[3, 3];
 		else
 			return (failMatrix);
