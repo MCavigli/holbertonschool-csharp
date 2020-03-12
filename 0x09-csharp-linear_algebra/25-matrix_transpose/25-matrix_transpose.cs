@@ -9,11 +9,7 @@ class MatrixMath
 	/// <returns>The new, transposed matrix.</returns>
 	public static double[,] Transpose(double[,] matrix)
 	{
-		double[,] failMatrix = { { -1 } };
 		double[,] newMatrix = new double[matrix.GetLength(1), matrix.GetLength(0)];
-
-		if (matrix.Length == 0)
-			return failMatrix;
 
 		for (int i = 0; i < matrix.GetLength(1); i++)
 		{
