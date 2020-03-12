@@ -10,7 +10,6 @@ class MatrixMath
 	public static double[,] Inverse2D(double[,] matrix)
 	{
 		double[,] failMatrix = new double[,] { { -1 } };
-		double[,] newMatrix = new double[2, 2];
 		double d = 0;
 
 		if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
@@ -20,10 +19,10 @@ class MatrixMath
 		if (d == 0)
 			return (failMatrix);
 
-		newMatrix[0, 0] = (1 / d) * (matrix[1, 1]);
-		newMatrix[0, 1] = (1 / d) * (matrix[0, 1]) * -1;
-		newMatrix[1, 0] = (1 / d) * (matrix[1, 0]);
-		newMatrix[1, 1] = (1 / d) * (matrix[0, 0]) * -1;
+		double[,] newMatrix = {
+			{(1 / d) * (matrix[1, 1]), (1 / d) * (matrix[0, 1]) * -1},
+			{(1 / d) * (matrix[1, 0]), (1 / d) * (matrix[0, 0]) * -1}
+		};
 		return (newMatrix);
 	}
 }
