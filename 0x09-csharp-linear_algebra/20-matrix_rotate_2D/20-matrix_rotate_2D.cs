@@ -2,6 +2,12 @@
 
 class MatrixMath
 {
+	/// <summary>
+	/// Rotates a 2x2 matrix by a given angle.
+	/// </summary>
+	/// <param name="matrix">The matrix to rotate.</param>
+	/// <param name="angle">The angle to rotate the matrix by.</param>
+	/// <returns>The new rotated, matrix, -1 on fail.</returns>
 	public static double[,] Rotate2D(double[,] matrix, double angle)
 	{
 		double[,] failMatrix = { { -1 } };
