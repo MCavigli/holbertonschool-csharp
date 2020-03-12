@@ -17,6 +17,8 @@ class MatrixMath
 			return (failMatrix);
 
 		d = (matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]);
+		if (d == 0)
+			return (failMatrix);
 
 		newMatrix[0, 0] = (1 / d) * (matrix[1, 1]);
 		newMatrix[0, 1] = (1 / d) * (matrix[0, 0]);
