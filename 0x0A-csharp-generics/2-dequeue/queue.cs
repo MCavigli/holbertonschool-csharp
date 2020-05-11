@@ -59,7 +59,7 @@ class Queue<T>
 	/// Removes the first node in the queue.
 	/// </summary>
 	/// <returns>Value of the first node.</returns>
-	public Type Dequeue()
+	public T Dequeue()
 	{
 		Node node;
 		if (this.head == null)
