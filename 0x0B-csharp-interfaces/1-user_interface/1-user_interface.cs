@@ -19,24 +19,31 @@ public abstract class Base
 	}
 }
 
-interface IInteractive
+public interface IInteractive
 {
 	void Interact();
 }
 
-interface IBreakable
+public interface IBreakable
 {
-	int durability;
+	int durability { get; set; }
 	void Break();
 }
 
-interface ICollectable
+public interface ICollectable
 {
-	bool isCollected;
+	bool isCollected { get; set; }
 	void Collect();
 }
 
-class TestObject : Base, IInteractive, IBreakable, ICollectable
+public class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
-	// code
+	public int durability { get; set; }
+	public bool isCollected { get; set; }
+	public void Interact()
+	{ }
+	public void Break()
+	{ }
+	public void Collect()
+	{ }
 }
