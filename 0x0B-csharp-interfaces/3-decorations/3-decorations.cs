@@ -65,20 +65,20 @@ class Decoration : Base, IInteractive, IBreakable
 	public void Interact()
 	{
 		if (this.durability <= 0)
-			Console.WriteLine("The {0} has been broken.", name);
+			Console.WriteLine("The {0} has been broken.", this.name);
 		else if (this.isQuestItem)
-			Console.WriteLine("You look at the {0}. There's a key inside.", name);
+			Console.WriteLine("You look at the {0}. There's a key inside.", this.name);
 		else
-			Console.WriteLine("You look at the {0}. Not much to see here.", name);
+			Console.WriteLine("You look at the {0}. Not much to see here.", this.name);
 	}
 	public void Break()
 	{
 		this.durability--;
 		if (this.durability > 0)
-			Console.WriteLine("You hit the {0}. It cracks.", name);
+			Console.WriteLine("You hit the {0}. It cracks.", this.name);
 		if (this.durability == 0)
-			Console.WriteLine("You smash the {0}. What a mess.", name);
+			Console.WriteLine("You smash the {0}. What a mess.", this.name);
 		if (this.durability < 0)
-			Console.WriteLine("The {0} is already broken.", name);
+			Console.WriteLine("The {0} is already broken.", this.name);
 	}
 }
