@@ -3,7 +3,7 @@
 /// <summary>
 /// Base class
 /// </summary>
-class Base
+abstract class Base
 {
 	public string name { get; set; }
 
