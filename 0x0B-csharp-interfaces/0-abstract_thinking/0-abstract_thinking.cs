@@ -3,15 +3,18 @@
 /// <summary>
 /// Base class
 /// </summary>
-abstract class Base
+public abstract class Base
 {
-	public string name;
+	/// <summary>
+	/// Name given
+	/// </summary>
+	public string name { get; set; }
 
 	/// <summary>
 	/// Overrides default ToString() method.
 	/// </summary>
 	public override string ToString()
 	{
-		return name + " is a " + typeof(SoftwareEngineer);
+		return name + " is a " + this.GetType();
 	}
 }
