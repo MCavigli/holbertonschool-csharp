@@ -8,7 +8,7 @@ public abstract class Base
 	/// <summary>
 	/// Name given
 	/// </summary>
-	public string name { get; set; }
+	public string name;
 
 	/// <summary>
 	/// Overrides default ToString() method.
@@ -19,24 +19,24 @@ public abstract class Base
 	}
 }
 
-public interface IInteractive
+interface IInteractive
 {
 	void Interact();
 }
 
-public interface IBreakable
+interface IBreakable
 {
 	int durability { get; set; }
 	void Break();
 }
 
-public interface ICollectable
+interface ICollectable
 {
 	bool isCollected { get; set; }
 	void Collect();
 }
 
-public class TestObject : Base, IInteractive, IBreakable, ICollectable
+class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
 	public int durability { get; set; }
 	public bool isCollected { get; set; }
