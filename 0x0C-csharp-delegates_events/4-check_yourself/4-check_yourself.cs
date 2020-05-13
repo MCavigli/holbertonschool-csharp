@@ -142,7 +142,7 @@ public class Player
 	}
 }
 
-public class CurrentHPArgs : EventArgs
+class CurrentHPArgs : EventArgs
 {
 	public readonly float currentHp;
 
