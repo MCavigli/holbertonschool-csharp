@@ -50,6 +50,7 @@ public class Player
 		if (damage < 0f)
 			damage = 0f;
 		Console.WriteLine("{0} takes {1} damage!", this.name, damage);
+		this.hp -= damage;
 	}
 
 	/// <summary>
@@ -61,6 +62,7 @@ public class Player
 		if (heal < 0f)
 			heal = 0f;
 		Console.WriteLine("{0} heals {1} HP!", this.name, heal);
+		this.hp += heal;
 	}
 
 }
