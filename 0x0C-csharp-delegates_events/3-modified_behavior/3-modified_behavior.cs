@@ -5,8 +5,11 @@
 /// </summary>
 public enum Modifier
 {
+	/// <summary> Half strong attack. </summary>
 	Weak,
+	/// <summary> Normal attack. </summary>
 	Base,
+	/// <summary> 1.5 times stronger attack. </summary>
 	Strong
 }
 
@@ -109,10 +112,10 @@ public class Player
 	public float ApplyModifier(float baseValue, Modifier modifier)
 	{
 		if (modifier == Modifier.Weak)
-			return baseValue / 2;
+			return baseValue * 0.5f;
 		else if (modifier == Modifier.Base)
 			return baseValue;
 		else
-			return (float)(baseValue * 1.5);
+			return baseValue * 1.5f;
 	}
 }
