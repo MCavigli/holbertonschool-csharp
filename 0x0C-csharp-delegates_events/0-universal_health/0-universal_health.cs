@@ -16,7 +16,7 @@ public class Player
 	/// <param name="maxHp">The player's maximum hit points.</param>
 	public Player(string name = "Player", float maxHp = 100f)
 	{
-		if (maxHp <= 0)
+		if (maxHp <= 0f)
 		{
 			this.maxHp = 100f;
 			Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
@@ -32,6 +32,6 @@ public class Player
 	/// </summary>
 	public void PrintHealth()
 	{
-		Console.WriteLine("{0} has {1} / {2} health.", this.name, this.hp, this.maxHp);
+		Console.WriteLine("{0} has {1} / {2} health", this.name, this.hp, this.maxHp);
 	}
 }
