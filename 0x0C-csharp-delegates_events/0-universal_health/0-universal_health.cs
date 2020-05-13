@@ -5,9 +5,9 @@
 /// </summary>
 public class Player
 {
-	string name;
-	float maxHp;
-	float hp;
+	private string name;
+	private float maxHp;
+	private float hp;
 
 	/// <summary>
 	/// Constructor for player.
