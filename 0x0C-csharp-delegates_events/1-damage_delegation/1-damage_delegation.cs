@@ -1,10 +1,6 @@
 ﻿using System;
 
-/// <summary>
-/// Delegate to change health.
-/// </summary>
-/// <param name="amt">The amount of health to be changed.</param>
-delegate void CalculateHealth(float amt);
+
 
 /// <summary>
 /// Defines a player.
@@ -32,7 +28,11 @@ public class Player
 		this.name = name;
 		this.hp = this.maxHp;
 	}
-
+	/// <summary>
+	/// Delegate to change health.
+	/// </summary>
+	/// <param name="amt">The amount of health to be changed.</param>
+	delegate void CalculateHealth(float amt);
 	/// <summary>
 	/// Prints the player's health.
 	/// </summary>
