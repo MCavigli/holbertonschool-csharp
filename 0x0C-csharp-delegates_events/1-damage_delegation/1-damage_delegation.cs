@@ -1,7 +1,5 @@
 ﻿using System;
 
-
-
 /// <summary>
 /// Defines a player.
 /// </summary>
@@ -47,9 +45,9 @@ public class Player
 	/// <param name="damage">The amount of damage taken.</param>
 	public void TakeDamage(float damage)
 	{
+		Console.WriteLine("{0} takes {1} damage!", this.name, damage);
 		if (damage < 0f)
 			damage = 0f;
-		Console.WriteLine("{0} takes {1} damage!", this.name, damage);
 		this.hp -= damage;
 	}
 
@@ -59,9 +57,9 @@ public class Player
 	/// <param name="heal">The amount of HP player heals.</param>
 	public void HealDamage(float heal)
 	{
+		Console.WriteLine("{0} heals {1} HP!", this.name, heal);
 		if (heal < 0f)
 			heal = 0f;
-		Console.WriteLine("{0} heals {1} HP!", this.name, heal);
 		this.hp += heal;
 	}
 
